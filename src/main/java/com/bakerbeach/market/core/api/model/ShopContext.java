@@ -1,0 +1,169 @@
+package com.bakerbeach.market.core.api.model;
+
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+
+public interface ShopContext {
+	
+	static final String FLASH_TYPE = "FLASH";
+	static final String REGULAR_TYPE = "REGULAR";
+	
+	String getShopType();
+	
+	void setShopType(String type);
+
+	ShopContext refine(Customer customer);
+
+	String getShopCode();
+
+	void setShopCode(String shopCode);
+
+	String getHost();
+
+	void setHost(String host);
+
+	Integer getPort();
+
+	void setPort(Integer port);
+
+	Integer getSecurePort();
+
+	void setSecurePort(Integer securePort);
+
+	String getPath();
+
+	void setPath(String path);
+
+	String getProtocol();
+	
+	void setProtocol(String protocol);
+
+	String getPageId();
+
+	void setPageId(String pageId);
+
+	FilterList getFilterList();
+
+	void setFilterList(FilterList filterList);
+
+	@Deprecated
+	Map<String, Object> getData();
+	
+	Map<String, Object> getRequestData();
+	
+	Map<String, Object> getSessionData();
+	
+	Map<String, Currency> getCurrencies();
+	
+	String getDefaultCurrency();
+
+	void setData(Map<String, Object> data);
+
+	String getCartCode();
+
+	void setCartCode(String cartCode);
+
+	@Deprecated
+	String getCurrency();
+	
+	@Deprecated
+	Boolean isCurrencySymbolAtFront();
+
+	@Deprecated
+	String getCurrencySymbol();
+	
+	Currency getCurrentCurrency();
+
+	List<Locale> getLocales();
+
+	void setLocales(List<Locale> locales);
+
+	Locale getDefaultLocale();
+
+	void setDefaultLocale(Locale defaultLocale);
+
+	Locale getCurrentLocale();
+
+	void setCurrentLocale(Locale currentLocale);
+
+	List<String> getPriceGroups();
+
+	void setPriceGroups(List<String> priceGroups);
+
+	String getDefaultPriceGroup();
+
+	void setDefaultPriceGroup(String defaultPriceGroup);
+
+	String getCurrentPriceGroup();
+
+	void setCurrentPriceGroup(String currentPriceGroup);
+
+	List<String> getValidCountries();
+
+	void setValidCountries(List<String> validCountries);
+	
+	boolean isCountryValid(String countryCode);
+
+	String getCountryOfDelivery();
+
+	String getDefaultCountryOfDelivery();
+
+	void setDefaultCountryOfDelivery(String defaultCountryOfDelivery);
+
+	String getDeviceClass();
+
+	void setDeviceClass(String deviceClass);
+
+	Address getBillingAddress();
+
+	void setBillingAddress(Address billingAddress);
+
+	Address getShippingAddress();
+
+	void setShippingAddress(Address shippingAddress);
+
+	String getOrderStatus();
+
+	void setOrderStatus(String orderStatus);
+
+	String getOrderId();
+
+	void setOrderId(String orderId);
+
+	Set<Integer> getValidSteps();
+
+	void setValidSteps(Set<Integer> validSteps);
+
+	String getRemoteIp();
+
+	void setRemoteIp(String remoteIp);
+
+	void setSolrUrl(String solrUrl);
+
+	String getSolrUrl();
+
+	String getAssortmentCode();
+
+	void setAssortmentCode(String assortmentCode);
+
+	String getDevice();
+
+	void setDevice(String device);
+	
+	List<String> getNewsletterIds();
+
+	void setGtmId(String gtmId);
+
+	String getGtmId();
+	
+	String getRightCurrencySymbol();
+	
+	String getLeftCurrencySymbol();
+	
+	String getApplicationPath();
+
+	void setCurrency(String currency);
+
+}
