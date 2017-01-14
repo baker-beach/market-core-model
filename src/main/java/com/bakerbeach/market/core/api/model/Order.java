@@ -45,4 +45,6 @@ public interface Order {
 	
 	void setPaymentCode(String paymentCode);
 
+	String getPaymentTransactionId();
+
 }
