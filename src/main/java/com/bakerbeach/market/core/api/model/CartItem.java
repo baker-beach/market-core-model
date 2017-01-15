@@ -14,15 +14,15 @@ public interface CartItem {
 	String getGtin();
 
 	String getName();
-	
+
 	void setName(String name);
-	
+
 	String getBrand();
-	
+
 	void setBrand(String brand);
-	
+
 	String getSupplier();
-	
+
 	void setSupplier(String supplier);
 
 	BigDecimal getQuantity();
@@ -38,14 +38,22 @@ public interface CartItem {
 	BigDecimal getUnitPrice();
 
 	void setUnitPrice(BigDecimal unitPrice);
-	
-	Map<String,BigDecimal> getUnitPrices();
-	
-	void setUnitPrices(Map<String,BigDecimal> unitPrices);
+
+	BigDecimal getMonthlyUnitPrice();
+
+	void setMonthlyUnitPrice(BigDecimal monthlyPrice);
+
+	Map<String, BigDecimal> getUnitPrices();
+
+	void setUnitPrices(Map<String, BigDecimal> unitPrices);
 
 	BigDecimal getTotalPrice();
 
 	void setTotalPrice(BigDecimal totalPrice);
+
+	BigDecimal getMonthlyTotalPrice();
+
+	void setMonthlyTotalPrice(BigDecimal monthlyTotalPrice);
 
 	TaxCode getTaxCode();
 
@@ -70,21 +78,21 @@ public interface CartItem {
 	void setTitle3(String title3);
 
 	String getImageUrl1();
-	
+
 	void setImageUrl1(String imageUrl1);
-	
+
 	String getImageUrl2();
-	
+
 	void setImageUrl2(String imageUrl2);
-	
+
 	String getSize();
-	
+
 	void setSize(String message);
 
 	String getColor();
-	
+
 	void setColor(String color);
-	
+
 	Map<String, CartItemComponent> getComponents();
 
 	public static interface CartItemComponent {
@@ -106,14 +114,22 @@ public interface CartItem {
 		BigDecimal getUnitPrice();
 
 		void setUnitPrice(BigDecimal unitPrice);
-		
-		Map<String,BigDecimal> getUnitPrices();
-		
-		void setUnitPrices(Map<String,BigDecimal> unitPrices);
+
+		BigDecimal getMonthlyUnitPrice();
+
+		void setMonthlyUnitPrice(BigDecimal monthlyPrice);
+
+		Map<String, BigDecimal> getUnitPrices();
+
+		void setUnitPrices(Map<String, BigDecimal> unitPrices);
 
 		BigDecimal getTotalPrice();
 
 		void setTotalPrice(BigDecimal totalPrice);
+
+		BigDecimal getMonthlyTotalPrice();
+
+		void setMonthlyTotalPrice(BigDecimal monthlyTotalPrice);
 
 		String getTitle1();
 
