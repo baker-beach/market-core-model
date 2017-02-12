@@ -89,4 +89,8 @@ public interface Cart {
 
 	void setName(String name);
 
+	String getWorkflow();
+
+	void setWorkflow(String workflow);
+
 }
