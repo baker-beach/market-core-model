@@ -10,5 +10,5 @@
 	<artifactId>market-core-model</artifactId>
 	<name>market-market-core-model</name>
 	<packaging>jar</packaging>
-	<version>1.1.5</version>
+	<version>1.1.6</version>
 </project>
