@@ -35,17 +35,11 @@ public interface CartItem {
 
 	Boolean isVolatile();
 
-	BigDecimal getUnitPrice();
+	Price getUnitPrice();
 
-	void setUnitPrice(BigDecimal unitPrice);
+	void setUnitPrice(Price unitPrice);
 
-	BigDecimal getMonthlyUnitPrice();
-
-	void setMonthlyUnitPrice(BigDecimal monthlyPrice);
-
-	Map<String, BigDecimal> getUnitPrices();
-
-	void setUnitPrices(Map<String, BigDecimal> unitPrices);
+	void setUnitPrice(String currency, Map<String, BigDecimal> values);
 
 	BigDecimal getTotalPrice();
 
@@ -65,16 +59,22 @@ public interface CartItem {
 
 	String getQualifier();
 
+	@Deprecated
 	String getTitle1();
 
+	@Deprecated
 	void setTitle1(String title1);
 
+	@Deprecated
 	String getTitle2();
 
+	@Deprecated
 	void setTitle2(String title2);
 
+	@Deprecated
 	String getTitle3();
 
+	@Deprecated
 	void setTitle3(String title3);
 
 	String getImageUrl1();
@@ -85,12 +85,16 @@ public interface CartItem {
 
 	void setImageUrl2(String imageUrl2);
 
+	@Deprecated
 	String getSize();
 
+	@Deprecated
 	void setSize(String message);
 
+	@Deprecated
 	String getColor();
 
+	@Deprecated
 	void setColor(String color);
 
 	Map<String, CartItemComponent> getComponents();
@@ -142,6 +146,16 @@ public interface CartItem {
 		String getTitle3();
 
 		void setTitle3(String title3);
+	}
+
+	public interface Price {
+
+		String getCurrency();
+
+		void setCurrency(String currency);
+
+		Map<String, BigDecimal> getValues();
+
 	}
 
 }

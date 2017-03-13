@@ -77,6 +77,10 @@ public interface Cart {
 	String getId();
 
 	void setId(String id);
+	
+	String getShopCode();
+	
+	void setShopCode(String shopCode);
 
 	String getCustomerId();
 
