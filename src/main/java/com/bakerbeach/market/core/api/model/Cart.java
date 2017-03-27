@@ -12,7 +12,10 @@ public interface Cart {
 
 	boolean addAll(Collection<CartItem> cartItems);
 
+	@Deprecated
 	List<CartItem> getCartItems();
+
+	Map<String, CartItem> getItems();
 
 	boolean remove(CartItem item);
 
@@ -95,5 +98,9 @@ public interface Cart {
 	void setWorkflow(String workflow);
 
 	Map<String, Object> getAttributes();
+
+	String getShopCode();
+
+	void setShopCode(String shopCode);
 
 }
