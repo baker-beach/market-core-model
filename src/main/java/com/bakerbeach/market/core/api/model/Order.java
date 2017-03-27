@@ -90,4 +90,6 @@ public interface Order {
 
 	String getPaymentTransactionId();
 
+	OrderItem newItem();
+
 }

@@ -124,6 +124,10 @@ public interface OrderItem {
 
 	Map<String, Option> getAllOptions();
 
+	void setOptions(Map<String, Option> options);
+
+	Option newOption(String code);
+
 	public interface Option {
 
 		String getCode();
@@ -146,6 +150,8 @@ public interface OrderItem {
 
 		BigDecimal getUnitPrice(String key);
 
+		void setUnitPrices(Map<String, BigDecimal> unitPrices);
+
 		void setUnitPrice(String key, BigDecimal value);
 
 		void addUnitPrices(Map<String, BigDecimal> unitPrices);
@@ -155,6 +161,8 @@ public interface OrderItem {
 		Map<String, String> getTitle();
 
 		String getTitle(String key);
+
+		void setTitle(Map<String, String> title);
 
 	}
 
