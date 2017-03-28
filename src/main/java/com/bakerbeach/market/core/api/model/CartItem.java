@@ -39,6 +39,16 @@ public interface CartItem {
 
 	Boolean isVolatile();
 
+	void setIsVolatile(Boolean isVolatile);
+
+	Boolean isVisible();
+
+	void setIsVisible(Boolean isVisible);
+
+	Boolean isImmutable();
+
+	void setIsImmutable(Boolean isImmutable);
+
 	@Deprecated
 	void setUnitPrice(BigDecimal unitPrice);
 
@@ -227,6 +237,7 @@ public interface CartItem {
 
 		void setTitle3(String title3);
 	}
+
 
 
 }

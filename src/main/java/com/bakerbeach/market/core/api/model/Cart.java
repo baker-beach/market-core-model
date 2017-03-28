@@ -12,6 +12,8 @@ public interface Cart {
 
 	boolean addAll(Collection<CartItem> cartItems);
 
+	void set(CartItem item);
+
 	@Deprecated
 	List<CartItem> getCartItems();
 
@@ -102,5 +104,6 @@ public interface Cart {
 	String getShopCode();
 
 	void setShopCode(String shopCode);
+
 
 }
