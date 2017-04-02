@@ -8,6 +8,9 @@ import java.util.Map;
 
 public interface Order {
 
+	public final static String STATUS_TMP = "tmp";
+	public final static String STATUS_SUBMITTED = "submitted";
+	@Deprecated
 	public final static String STATUS_SUBMIT = "submit";
 	public final static String STATUS_ACCEPTED = "accepted";
 	public final static String STATUS_CANCELED = "canceled";
