@@ -21,6 +21,8 @@ public interface Cart {
 
 	boolean remove(CartItem item);
 
+	boolean remove(String id);
+
 	void clear();
 
 	boolean isEmpty();
@@ -104,6 +106,5 @@ public interface Cart {
 	String getShopCode();
 
 	void setShopCode(String shopCode);
-
 
 }
