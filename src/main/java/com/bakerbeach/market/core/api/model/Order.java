@@ -46,6 +46,8 @@ public interface Order {
 
 	void setBillingAddress(Address billingAddress);
 
+	Address newAddress(Address source);
+
 	@Deprecated
 	List<OrderItem> getItems();
 
