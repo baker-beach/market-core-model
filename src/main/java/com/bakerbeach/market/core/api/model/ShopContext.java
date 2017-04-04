@@ -6,12 +6,12 @@ import java.util.Map;
 import java.util.Set;
 
 public interface ShopContext {
-	
+
 	static final String FLASH_TYPE = "FLASH";
 	static final String REGULAR_TYPE = "REGULAR";
-	
+
 	String getShopType();
-	
+
 	void setShopType(String type);
 
 	ShopContext refine(Customer customer);
@@ -37,7 +37,7 @@ public interface ShopContext {
 	void setPath(String path);
 
 	String getProtocol();
-	
+
 	void setProtocol(String protocol);
 
 	String getPageId();
@@ -50,13 +50,13 @@ public interface ShopContext {
 
 	@Deprecated
 	Map<String, Object> getData();
-	
+
 	Map<String, Object> getRequestData();
-	
+
 	Map<String, Object> getSessionData();
-	
+
 	Map<String, Currency> getCurrencies();
-	
+
 	String getDefaultCurrency();
 
 	void setData(Map<String, Object> data);
@@ -67,13 +67,13 @@ public interface ShopContext {
 
 	@Deprecated
 	String getCurrency();
-	
+
 	@Deprecated
 	Boolean isCurrencySymbolAtFront();
 
 	@Deprecated
 	String getCurrencySymbol();
-	
+
 	Currency getCurrentCurrency();
 
 	List<Locale> getLocales();
@@ -103,7 +103,7 @@ public interface ShopContext {
 	List<String> getValidCountries();
 
 	void setValidCountries(List<String> validCountries);
-	
+
 	boolean isCountryValid(String countryCode);
 
 	String getCountryOfDelivery();
@@ -151,19 +151,25 @@ public interface ShopContext {
 	String getDevice();
 
 	void setDevice(String device);
-	
+
 	List<String> getNewsletterIds();
 
 	void setGtmId(String gtmId);
 
 	String getGtmId();
-	
+
 	String getRightCurrencySymbol();
-	
+
 	String getLeftCurrencySymbol();
-	
+
 	String getApplicationPath();
 
 	void setCurrency(String currency);
+
+	List<String> getRegistrationShopCode();
+
+	void setRegistrationShopCode(List<String> registrationShopCode);
+
+	void setRegistrationShopCodeString(String registrationShopCodeString);
 
 }
