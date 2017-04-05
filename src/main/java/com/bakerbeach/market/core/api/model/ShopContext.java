@@ -20,6 +20,22 @@ public interface ShopContext {
 
 	void setShopCode(String shopCode);
 
+	String getBigGroupCode();
+
+	void setBigGroupCode(String bigGroupCode);
+
+	Boolean getUseBigGroupCode();
+
+	void setUseBigGroupCode(Boolean useBigGroupCode);
+
+	void setOrderSequenceRandomOffset(Long orderSequenceRandomOffset);
+
+	Long getOrderSequenceRandomOffset();
+
+	void setOrderSequenceCode(String orderSequenceCode);
+
+	String getOrderSequenceCode();
+
 	String getHost();
 
 	void setHost(String host);
