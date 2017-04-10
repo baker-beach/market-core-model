@@ -20,13 +20,11 @@ public interface ShopContext {
 
 	void setShopCode(String shopCode);
 
-	String getBigGroupCode();
+	List<String> getGroupCodes();
 
-	void setBigGroupCode(String bigGroupCode);
+	void setGroupCodes(List<String> groupCodes);
 
-	Boolean getUseBigGroupCode();
-
-	void setUseBigGroupCode(Boolean useBigGroupCode);
+	void setGroupCodesString(String groupCodesString);
 
 	void setOrderSequenceRandomOffset(Long orderSequenceRandomOffset);
 
@@ -181,11 +179,5 @@ public interface ShopContext {
 	String getApplicationPath();
 
 	void setCurrency(String currency);
-
-	List<String> getRegistrationShopCode();
-
-	void setRegistrationShopCode(List<String> registrationShopCode);
-
-	void setRegistrationShopCodeString(String registrationShopCodeString);
 
 }
