@@ -1,6 +1,7 @@
 package com.bakerbeach.market.core.api.model;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BundleComponent {
 
@@ -49,5 +50,7 @@ public interface BundleComponent {
 	Boolean isMultiselect();
 
 	void setIsMultiselect(Boolean isMultiselect);
+
+	Map<String, Object> getAttributes();
 
 }
