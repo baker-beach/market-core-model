@@ -125,6 +125,8 @@ public interface OrderItem {
 	Map<String, Option> getAllOptions();
 
 	void setOptions(Map<String, Option> options);
+	
+	void putOption(String key, Option option);
 
 	Option newOption(String code);
 
@@ -223,5 +225,6 @@ public interface OrderItem {
 		void setTitle3(String title3);
 
 	}
+
 
 }

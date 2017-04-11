@@ -30,9 +30,15 @@ public interface Order {
 
 	void setCurrencyCode(String currencyCode);
 
+	@Deprecated
 	BigDecimal getTotal();
 
+	@Deprecated
 	void setTotal(BigDecimal total);
+
+	Total getTotal(Boolean asObject);
+
+	void setTotal(Total total);
 
 	String getCustomerId();
 
@@ -51,7 +57,7 @@ public interface Order {
 	@Deprecated
 	List<OrderItem> getItems();
 
-	Map<String, OrderItem> getAllItems();
+	Map<String, OrderItem> getItems(Boolean asObject);
 
 	OrderItem getItem(String key);
 
@@ -96,5 +102,8 @@ public interface Order {
 	String getPaymentTransactionId();
 
 	OrderItem newItem();
+
+	Total newTotal(Total source);
+
 
 }
