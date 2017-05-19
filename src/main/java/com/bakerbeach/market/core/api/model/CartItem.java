@@ -8,6 +8,8 @@ public interface CartItem {
 	Map<String, Object> getAttributes();
 
 	String getId();
+	
+	void setId(String id);
 
 	String getCode();
 
