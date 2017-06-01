@@ -236,6 +236,8 @@ public interface CartItem {
 		String getTitle3();
 
 		void setTitle3(String title3);
+		
+		Map<String, Object> getAttributes();
 	}
 
 

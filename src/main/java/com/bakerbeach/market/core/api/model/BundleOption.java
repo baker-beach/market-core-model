@@ -27,4 +27,6 @@ public interface BundleOption {
 
 	Boolean isRequired();
 
+	Map<String, Object> getAttributes();
+
 }
