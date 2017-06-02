@@ -107,4 +107,6 @@ public interface Cart {
 
 	void setShopCode(String shopCode);
 
+	CartItem getNewItem(String code, BigDecimal quantity);
+
 }

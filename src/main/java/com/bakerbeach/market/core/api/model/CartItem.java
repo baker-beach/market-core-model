@@ -242,6 +242,8 @@ public interface CartItem {
 		Map<String, Object> getAttributes();
 	}
 
+	String createId();
+
 
 
 }
