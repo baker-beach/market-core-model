@@ -8,7 +8,7 @@ public interface CartItem {
 	Map<String, Object> getAttributes();
 
 	String getId();
-	
+
 	void setId(String id);
 
 	String getCode();
@@ -50,6 +50,10 @@ public interface CartItem {
 	Boolean isImmutable();
 
 	void setIsImmutable(Boolean isImmutable);
+
+	Boolean isConfigurable();
+
+	void setIsConfigurable(Boolean isConfigurable);
 
 	@Deprecated
 	void setUnitPrice(BigDecimal unitPrice);
@@ -238,12 +242,10 @@ public interface CartItem {
 		String getTitle3();
 
 		void setTitle3(String title3);
-		
+
 		Map<String, Object> getAttributes();
 	}
 
 	String createId();
-
-
 
 }
