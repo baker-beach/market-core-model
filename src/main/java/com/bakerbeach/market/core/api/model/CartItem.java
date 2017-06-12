@@ -9,6 +9,8 @@ public interface CartItem {
 
 	String getId();
 
+	void setId(String id);
+
 	String getCode();
 
 	void setCode(String code);
@@ -236,6 +238,8 @@ public interface CartItem {
 		String getTitle3();
 
 		void setTitle3(String title3);
+		
+		Map<String, Object> getAttributes();
 	}
 
 
