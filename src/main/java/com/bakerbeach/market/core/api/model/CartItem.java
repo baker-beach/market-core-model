@@ -158,6 +158,16 @@ public interface CartItem {
 
 	BigDecimal getTotalPrice(String key);
 
+	String createId();
+
+	BigDecimal getMinQty();
+
+	void setMinQty(BigDecimal minQty);
+
+	BigDecimal getMaxQty();
+
+	void setMaxQty(BigDecimal maxQty);
+
 	public interface Option {
 
 		String getCode();
@@ -245,7 +255,5 @@ public interface CartItem {
 
 		Map<String, Object> getAttributes();
 	}
-
-	String createId();
 
 }
