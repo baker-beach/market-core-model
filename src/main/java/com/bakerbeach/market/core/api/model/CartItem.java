@@ -255,5 +255,9 @@ public interface CartItem {
 
 		Map<String, Object> getAttributes();
 	}
+	
+	ProductType getType();
+	
+	void setType(ProductType productType);
 
 }
