@@ -62,31 +62,15 @@ public interface ShopContext {
 
 	void setFilterList(FilterList filterList);
 
-	@Deprecated
-	Map<String, Object> getData();
-
 	Map<String, Object> getRequestData();
-
-	Map<String, Object> getSessionData();
 
 	Map<String, Currency> getCurrencies();
 
 	String getDefaultCurrency();
 
-	void setData(Map<String, Object> data);
-
 	String getCartCode();
 
 	void setCartCode(String cartCode);
-
-	@Deprecated
-	String getCurrency();
-
-	@Deprecated
-	Boolean isCurrencySymbolAtFront();
-
-	@Deprecated
-	String getCurrencySymbol();
 
 	Currency getCurrentCurrency();
 
@@ -175,8 +159,6 @@ public interface ShopContext {
 	String getRightCurrencySymbol();
 
 	String getLeftCurrencySymbol();
-
-	String getApplicationPath();
 
 	void setCurrency(String currency);
 
