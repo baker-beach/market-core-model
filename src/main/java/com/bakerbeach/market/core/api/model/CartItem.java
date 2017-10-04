@@ -16,6 +16,8 @@ public interface CartItem {
 	void setCode(String code);
 
 	String getGtin();
+	
+	void setGtin(String gtin);
 
 	String getName();
 
