@@ -5,6 +5,9 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 public interface ShopContext {
 
 	static final String FLASH_TYPE = "FLASH";
@@ -161,5 +164,11 @@ public interface ShopContext {
 	String getLeftCurrencySymbol();
 
 	void setCurrency(String currency);
+	
+	HttpServletRequest getHttpServletRequest();
+	
+	HttpServletResponse getHttpServletResponse();
+	
+	String getApplicationPath();
 
 }
