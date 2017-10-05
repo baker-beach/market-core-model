@@ -1,8 +1,6 @@
 package com.bakerbeach.market.core.api.model;
 
-import java.io.Serializable;
-
-public class Currency implements Serializable{
+public class Currency {
 	
 	private String isoCode;
 	private String symbol;
