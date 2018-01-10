@@ -16,6 +16,8 @@ public interface CartItem {
 	void setCode(String code);
 
 	String getGtin();
+	
+	void setGtin(String gtin);
 
 	String getName();
 
@@ -50,6 +52,10 @@ public interface CartItem {
 	Boolean isImmutable();
 
 	void setIsImmutable(Boolean isImmutable);
+
+	Boolean isConfigurable();
+
+	void setIsConfigurable(Boolean isConfigurable);
 
 	@Deprecated
 	void setUnitPrice(BigDecimal unitPrice);
@@ -154,6 +160,16 @@ public interface CartItem {
 
 	BigDecimal getTotalPrice(String key);
 
+	String createId();
+
+	BigDecimal getMinQty();
+
+	void setMinQty(BigDecimal minQty);
+
+	BigDecimal getMaxQty();
+
+	void setMaxQty(BigDecimal maxQty);
+
 	public interface Option {
 
 		String getCode();
@@ -238,10 +254,12 @@ public interface CartItem {
 		String getTitle3();
 
 		void setTitle3(String title3);
-		
+
 		Map<String, Object> getAttributes();
 	}
-
-
+	
+	ProductType getType();
+	
+	void setType(ProductType productType);
 
 }
